@@ -16,3 +16,8 @@ app.init()
 app.loop()
 print('stoped     ;)')
 ```
+# sys.argv
+```-outOff``` - Отключает все принты кроме дебага.
+```-debug``` - Включает дебаг.
+# Запуск с sys.argv
+```python(3) file-location -(debug or outOff)```
