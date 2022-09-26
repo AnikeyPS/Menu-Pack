@@ -3,6 +3,7 @@ import tkinter as tk
 import tkinter.messagebox as msgbox_tk
 from . import out
 from _tkinter import TclError
+import ttk
 
 
 def msgbox(name, title='Value'):
@@ -70,14 +71,14 @@ class MenuApp:
         self._msgbox_title = item
 
     def _add_button(self, list_):
-        but = tk.Button(self._main, text=list_[0],
+        but = ttk.Button(self._main, text=list_[0],
                         command=lambda: msgbox(list_, self._msgbox_title))
         but.pack()
         return but
 
     def _add_command_button(self, list_):
         text = list_[1].split('command://')[1]
-        but = tk.Button(self._main, text=list_[0],
+        but = ttk.Button(self._main, text=list_[0],
                         command=lambda: exec(text))
         but.pack()
         return but
