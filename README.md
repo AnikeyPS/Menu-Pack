@@ -4,7 +4,9 @@
 
 Pip:
 
-```pip3(pip) install```
+```
+pip3(pip) install
+```
 
 Использование в коде:
 
