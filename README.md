@@ -5,7 +5,7 @@
 Pip:
 
 ```
-pip3(pip) install https://github.com/AnikeyPS/Menu-Pack/archive/main.zip
+pip(3) install https://github.com/AnikeyPS/Menu-Pack/archive/main.zip
 ```
 
 Использование в коде:
