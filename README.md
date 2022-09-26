@@ -30,7 +30,7 @@ app.loop()
 
 `-debug` - Включает дебаг.
 
-# Запуск с sys.argv
+Запуск с sys.argv:
 
 ```
 python(3) file-location -(debug or outOff)
