@@ -1,11 +1,9 @@
 ## Menu-Pack
 # Инсталяция
 Pip:
-```
-pip3(pip) install 
-```
+`pip3(pip) install`
 Использование в коде:
-```from Menu.core import MenuApp```
+`from Menu.core import MenuApp`
 # Пример кода
 ```
 from Menu.core import MenuApp
@@ -15,9 +13,7 @@ app.init()
 app.loop()
 ```
 # sys.argv
-```-outOff``` - Отключает все принты кроме дебага.
-```-debug``` - Включает дебаг.
+`-outOff` - Отключает все принты кроме дебага.
+`-debug` - Включает дебаг.
 # Запуск с sys.argv
-```python(3) file-location -(debug or outOff)```
-# Принты
-```app.init()``` - Принтит 'Inited'. ```app.loop()``` - При старте приложения - 'Started', при его закрытии - 'Closed'.
+`python(3) file-location -(debug or outOff)`
