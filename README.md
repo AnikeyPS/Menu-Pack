@@ -19,3 +19,5 @@ app.loop()
 ```-debug``` - Включает дебаг.
 # Запуск с sys.argv
 ```python(3) file-location -(debug or outOff)```
+# Принты
+```app.init()``` - Принтит 'Inited'. ```app.loop()``` - При старте приложения - 'Started', при его закрытии - 'Closed'.
