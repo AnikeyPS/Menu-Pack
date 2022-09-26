@@ -16,18 +16,11 @@ def elements_value_get(elem):
                 except KeyError:
                     out.append('Error')
             try:
-                out_ = setup[p2][p]
-                out_ = 'pycommand: ' + out_.split('command://')[1]
-                out.append(out_)
+                out.append(setup[p2][p])
             except KeyError:
                 out.append('Error')
         else:
-            if 'command://' in i:
-                out_ = i
-                out_ = 'pycommand: ' + out_.split('command://')[1]
-                out.append(out_)
-            else:
-                out.append(i)
+            out.append(i)
     return out
 
 
