@@ -10,7 +10,9 @@ pip3(pip) install
 
 Использование в коде:
 
-`from Menu.core import MenuApp`
+```
+from Menu.core import MenuApp
+```
 
 # Пример кода
 
@@ -30,4 +32,6 @@ app.loop()
 
 # Запуск с sys.argv
 
-`python(3) file-location -(debug or outOff)`
+```
+python(3) file-location -(debug or outOff)
+```
