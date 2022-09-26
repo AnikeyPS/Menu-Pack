@@ -9,12 +9,10 @@ pip3(pip) install
 # Пример кода
 ```
 from Menu.core import MenuApp
-app = MenuApp(['kok', 'koko'], ['print hello', 'command://print(\'Hello!\''])
-app.title('Test')
-app.title_msgbox(')))')
+app = MenuApp(['Click', 'command://print(\'Hello!\')'], ['About', 'This is a example code'])
+app.title('Example')
 app.init()
 app.loop()
-print('stoped     ;)')
 ```
 # sys.argv
 ```-outOff``` - Отключает все принты кроме дебага.
