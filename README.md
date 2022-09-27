@@ -11,13 +11,13 @@ pip(3) install https://github.com/AnikeyPS/Menu-Pack/archive/main.zip
 Использование в коде:
 
 ```
-import Menu_Pack.core
+import menu
 ```
 
 # Пример кода
 
 ```
-from Menu_Pack.core import MenuApp
+from menu.core import MenuApp
 app = MenuApp(['Click', 'command://print(\'Hello!\')'], ['About', 'This is a example code'])
 app.title('Example')
 app.init()
