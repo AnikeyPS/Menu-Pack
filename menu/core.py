@@ -2,6 +2,7 @@ from .app import elements_print, element_get_value
 import tkinter as tk
 import tkinter.messagebox as msgbox_tk
 from . import out
+from idlelib import __path__ as icon_path
 from _tkinter import TclError
 import ttk
 
@@ -38,13 +39,15 @@ class MenuApp:
             else:
                 if 'command://' in element_get_value(i):
                     list_ = i
-                    list_[1] = element_get_value(i)
+                    list_[1] = element_get_value(list_)
                     self._buttons.append(self._add_command_button(list_))
                 else:
                     self._buttons.append(self._add_button(i))
+        icon = '{}\\Icons\\idle.ico'
+        icon = icon.format(icon_path[0])
+        self._main.wm_iconbitmap(icon)
         if out:
             print('Inited')
-        self._main.resizable(False, False)
 
     def title(self, item):
         self._main.title(item)
@@ -83,3 +86,6 @@ class MenuApp:
                          command=lambda: exec(text))
         but.pack()
         return but
+
+    def icon(self, icon):
+        self._main.wm_iconbitmap(icon)
