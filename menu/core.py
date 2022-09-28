@@ -24,7 +24,7 @@ class MenuApp:
         self._main.title("Menu demo")
         self._msgbox_title = 'Value'
         self._buttons = []
-        self._main.resizable(False, False)
+        self._main.resizable(False, True)
 
     def get_elements(self):
         return self._elements, elements_print(self._elements)
