@@ -17,11 +17,8 @@ import menu
 # Пример кода
 
 ```
-from menu.core import MenuApp
-app = MenuApp(['Click', 'command://print(\'Hello!\')'], ['About', 'This is a example code'])
-app.title('Example')
-app.init()
-app.loop()
+from menu_examples.example1 import *
+example.loop()
 ```
 
 # sys.argv
