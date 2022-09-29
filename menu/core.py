@@ -22,7 +22,6 @@ class MenuApp:
                               ['test', 'test']]
             self._non_args = True
         self._main = tk.Tk()
-        self._main.title("Menu demo")
         self._msgbox_title = 'Value'
         self._buttons = []
 
@@ -46,6 +45,7 @@ class MenuApp:
         icon = '{}\\Icons\\idle.ico'
         icon = icon.format(icon_path[0])
         self._main.wm_iconbitmap(icon)
+        self._main.title("Menu demo")
         if out:
             print('Inited')
 
