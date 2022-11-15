@@ -90,19 +90,3 @@ class MenuApp:
 
     def icon(self, icon):
         self._main.wm_iconbitmap(icon)
-    
-    def loop_thread(self):
-        new_obj = threading.Thread(target=_loop, args=(self))
-        new_obj.start()
-        new_obj.join()
-    
-def _loop(obj):
-    if out:
-        print('Started')
-    while True:
-        try:
-            obj._main.update()
-        except TclError:
-            if out:
-                print('Closed')
-            break
