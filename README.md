@@ -17,8 +17,8 @@ import menu_pack.core
 # Пример кода
 
 ```
-from menu_pack.examples.example1 import *
-example.loop()
+from menu_pack.examples import *
+example1.app.loop()
 ```
 
 # sys.argv
