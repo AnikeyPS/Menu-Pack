@@ -5,6 +5,7 @@ from . import out
 from idlelib import __path__ as icon_path
 from _tkinter import TclError
 import ttk
+import threading
 
 
 def msgbox(name, title='Value'):
@@ -89,3 +90,8 @@ class MenuApp:
 
     def icon(self, icon):
         self._main.wm_iconbitmap(icon)
+    
+    def loop_thread():
+        new_obj = threading.Thread(target=loop)
+        new_obj.start()
+        new_obj.join()
