@@ -91,8 +91,7 @@ class MenuApp:
     def icon(self, icon):
         self._main.wm_iconbitmap(icon)
     
-    def loop_thread(err=None):
-        print(err)
-        new_obj = threading.Thread(target=loop)
+    def loop_thread(self):
+        new_obj = threading.Thread(target=self.loop)
         new_obj.start()
         new_obj.join()
