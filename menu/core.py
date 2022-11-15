@@ -5,7 +5,6 @@ from . import out
 from idlelib import __path__ as icon_path
 from _tkinter import TclError
 import ttk
-import threading
 
 
 def msgbox(name, title='Value'):
