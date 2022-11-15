@@ -11,13 +11,13 @@ pip(3) install https://github.com/AnikeyPS/Menu-Pack/archive/main.zip
 Использование в коде:
 
 ```
-import menu
+import menu_pack.core
 ```
 
 # Пример кода
 
 ```
-from menu_examples.example1 import *
+from menu_pack.examples.example1 import *
 example.loop()
 ```
 
