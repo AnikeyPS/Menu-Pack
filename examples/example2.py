@@ -3,7 +3,7 @@ from menu_pack.core import MenuApp
 
 
 def _run():
-    app = MenuApp(["Button 1": "Real button", "Pause": "command://__import__('os').system('pause')"])
+    app = MenuApp([["Button 1", "Real button"], ["Pause", "command://__import__('os').system('pause')"]])
     app.init()
     app.loop()
 
