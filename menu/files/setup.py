@@ -17,5 +17,5 @@ setup = {
 }
 
 # Real setup commands
-self_lib = {'__help__': __help__, '__version__': __version__, 'help;__version__': version_help}
+self_lib = {'__version__': __version__}
 setup = {"setup": setup, "self": self_lib, "sys": sys.__dict__, "os": os.__dict__}
