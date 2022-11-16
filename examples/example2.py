@@ -9,5 +9,3 @@ def _run():
 
 
 obj = th.Thread(target=_run)
-obj.start()
-obj.join()
