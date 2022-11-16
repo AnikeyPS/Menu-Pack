@@ -6,7 +6,7 @@ def elements_value_get(elem):
     p = [i[1] for i in elem]
     out = []
     for i in p:
-        if 'link://' in i:
+        if i.startswith('link://'):
             p = ''.join(i.split('link://')[1:])
             if debug:
                 print(p)
