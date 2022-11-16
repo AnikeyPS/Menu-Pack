@@ -1,4 +1,5 @@
 from .files.setup import setup
+from . import debug
 
 
 def elements_value_get(elem):
@@ -7,6 +8,8 @@ def elements_value_get(elem):
     for i in p:
         if 'link://' in i:
             p = ''.join(i.split('link://')[:1])
+            if debug:
+                print(p)
             p2 = p.split('.')[0]
             try:
                 p = ''.join(p.split('.')[:1])
