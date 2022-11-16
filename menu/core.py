@@ -85,14 +85,10 @@ class MenuApp:
         if debug:
             print(text)
         but = ttk.Button(self._main, text=list_[0],
-                         command=lambda: self._run(text))
+                         command=lambda: exec(text))
         but.pack()
         return but
 
     def icon(self, icon):
         self._main.wm_iconbitmap(icon)
         
-        
-    def _run(self, obj):
-        self._main.update()
-        exec(obj)
