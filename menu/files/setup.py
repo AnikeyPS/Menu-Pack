@@ -1,8 +1,6 @@
 import os
 import sys
-from ..help import __help__
 from .. import __version__
-from ..help import __version__ as version_help
 '''
 This file is a list of new values.
 Write new values down.
