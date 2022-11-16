@@ -1,7 +1,7 @@
 from .app import elements_print, element_get_value
 import tkinter as tk
 import tkinter.messagebox as msgbox_tk
-from . import out
+from . import out, debug
 from idlelib import __path__ as icon_path
 from _tkinter import TclError
 import ttk
@@ -82,6 +82,8 @@ class MenuApp:
 
     def _add_command_button(self, list_):
         text = ''.join(list_[1].split('command://')[:1])
+        if debug:
+            print(text)
         but = ttk.Button(self._main, text=list_[0],
                          command=lambda: exec(text))
         but.pack()
