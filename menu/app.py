@@ -9,7 +9,7 @@ def elements_value_get(elem):
             p = ''.join(i.split('link://')[:1])
             p2 = p.split('.')[0]
             try:
-                p = p.split('.')[1]
+                p = ''.join(p.split('.')[:1])
             except IndexError:
                 try:
                     out.append(setup[p2])
