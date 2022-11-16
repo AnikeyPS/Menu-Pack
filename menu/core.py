@@ -82,13 +82,17 @@ class MenuApp:
 
     def _add_command_button(self, list_):
         text = ''.join(list_[1].split('command://')[1:])
-        self._main.update()
         if debug:
             print(text)
         but = ttk.Button(self._main, text=list_[0],
-                         command=lambda: exec(text))
+                         command=lambda: self._run(text))
         but.pack()
         return but
 
     def icon(self, icon):
         self._main.wm_iconbitmap(icon)
+        
+        
+    def _run(self, obj):
+        self._main.update()
+        exec(obj)
