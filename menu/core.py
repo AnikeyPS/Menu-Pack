@@ -82,6 +82,7 @@ class MenuApp:
 
     def _add_command_button(self, list_):
         text = ''.join(list_[1].split('command://')[1:])
+        self._main.update()
         if debug:
             print(text)
         but = ttk.Button(self._main, text=list_[0],
