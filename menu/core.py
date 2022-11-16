@@ -33,10 +33,10 @@ class MenuApp:
             for i in self._buttons:
                 i.destroy()
         for i in self._elements:
-            if 'command://' in i[1]:
+            if i[1].startwith('command://'):
                 self._buttons.append(self._add_command_button(i))
             else:
-                if 'command://' in element_get_value(i):
+                if element_get_value(i).startswith('command://'):
                     list_ = i
                     list_[1] = element_get_value(list_)
                     self._buttons.append(self._add_command_button(list_))
